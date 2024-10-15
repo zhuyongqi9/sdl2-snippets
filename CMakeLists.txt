@@ -115,4 +115,7 @@ target_link_libraries(render_to_texture PRIVATE SDL2 SDL2_image SDL2_ttf SDL2_mi
 add_executable(frame_independent_movement frame_independent_movement/frame_independent_movement.cpp)
 target_link_libraries(frame_independent_movement PRIVATE SDL2 SDL2_image SDL2_ttf SDL2_mixer)
 
+add_executable(recorder recorder/recorder.cpp)
+target_link_libraries(recorder PRIVATE SDL2 SDL2_image SDL2_ttf SDL2_mixer)
+
 add_executable(timer_test test/timer_test.cpp)
